@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="skeleton.css">
+        <link rel="icon" href="favicon.png">
+
+        <title>Morse Code Converter</title>
+
+        <meta charset="utf-8">
+
+        <script src="MorseCodeConverter.js"></script>
+    </head>
+    <body>
+        <div class = "container">
+            <div class = "row">
+                <h1>Morse Code Converter</h1>
+                <div class = "twelve columns">
+                    
+                    <label>Enter text to encode or decode</label><br>
+                    <textarea class = "u-full-width" id="inputStr" cols="30" rows="10"></textarea><br>
+                    <br>
+
+                </div>
+                <div class = "twelve columns">
+                    <input type="button" class = "button-primary" id="mc2c" value="MC2C" onclick="decodeText()" />
+                    <input type="button" class = "button-success" id="c2mc" value="C2MC" onclick="encodeText()"/>
+                    <input type="button" class = "button-success2" id="clear" value="CLEAR" onclick="clearfields()" />
+                    <br><br>
+                </div>
+                <div class = "twelve columns">      
+                    
+                    <textarea disabled class = "u-full-width" id="output" cols="30" rows="10"></textarea><br>
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
